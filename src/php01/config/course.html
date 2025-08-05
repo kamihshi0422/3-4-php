@@ -1,0 +1,36 @@
+<!-- http://localhost/php01/config/course.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- POST -->
+    <!-- <form action="course.php" method="POST"> -->
+
+    <!-- GET -->
+    <form action="course.php" method="GET">
+    <!-- POSTとプラウザの挙動は一緒　せんいした後のURLが下記になる -->
+    <!--http://localhost/php01/course.php?company=株式会社estra&submit=送信する-->
+
+        <label>会社名：<input type="text" name="company"></label>
+        <!-- labelで囲むと　会社名：　をクリックでもフォームを入力できる -->
+        <br />
+        <input type="submit" name="submit" value="送信する" />
+    </form>
+</body>
+
+</html>
+
+<!-- POST を使う場面-->]
+<!--サーバーに情報を投稿する
+    配列などの長いデータを送信する
+    ファイルのアップロードを行う -->
+
+<!-- GET を使う場面-->
+<!-- サーバーから情報を取り出す -->

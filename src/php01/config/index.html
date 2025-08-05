@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 1-9</title>
+</head>
+<body>
+    <form action="result.php" method="POST">
+        <!--お名前：<input type="text" name="my_name" />
+            ・下記すべて、<label> 不要
+            ・/> で閉じる　　-->
+        <label>お名前：
+            <input type="text" name="name">
+        </label>
+        <br>
+
+        <label>ご希望商品：</label>
+        <label>
+            <input type="radio" value="Aセット" name="set">Aセット
+        </label>
+        <label>
+            <input type="radio" value="Bセット" name="set">Bセット
+        </label>
+        <label>
+            <input type="radio" value="Cセット" name="set">Cセット
+        </label>
+        <!-- name = choices のほうがわかりやすい-->
+        <br>
+
+        <label>注文数：
+            <input type="number" name="number">
+        </label>
+        <br>
+
+        <input type="submit" name="submit" value="送信">
+    </form>
+</body>
+</html>
